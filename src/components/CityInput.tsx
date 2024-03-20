@@ -5,7 +5,7 @@ import geoCoords from "../utils/geoCoords";
 import { FaLocationCrosshairs, FaMagnifyingGlass } from "react-icons/fa6";
 
 function CityInput() {
-    const input = useRef();
+    const input = useRef<HTMLInputElement>(null);
     const {
         app: { isDark },
         dispatchApp,
@@ -30,7 +30,7 @@ function CityInput() {
                     );
                     dispatchApp({ type: "COUNTRY", payload: country });
                     dispatchApp({ type: "CITY", payload: name });
-                    input.current.value = "";
+                    input!.current!.value = "";
                 }}
                 style={isDark ? { background: "#37435a" } : {}}
             >

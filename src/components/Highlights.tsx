@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import AppContext from "../context/appContext";
 import Card from "./Card";
 import Loader from "./Loader";
