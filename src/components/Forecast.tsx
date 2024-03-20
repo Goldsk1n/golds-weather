@@ -13,7 +13,7 @@ function Forecast() {
     const { daily } = app.weather;
     return (
         <div className="forecast-container">
-            {daily.map((weather, index) => {
+            {daily.map((weather: any, index: number) => {
                 const date = new Date(weather.dt * 1000);
                 const dayFormatter = Intl.DateTimeFormat([], {
                     weekday: "long",

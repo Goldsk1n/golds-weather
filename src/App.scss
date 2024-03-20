@@ -304,6 +304,10 @@ img {
     margin-top: 1rem;
 }
 
+.swiper {
+    --swiper-navigation-size: 30px;
+}
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after,
 .swiper-button-prev:after,

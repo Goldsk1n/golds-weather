@@ -1,7 +1,5 @@
-import useTemp from "../hooks/useTemp";
-
-function Temperature(props: {temperature: number}) {
-    const temp = useTemp(props.temperature);
+function Temperature(props: {temperature: string}) {
+    const temp = parseFloat(props.temperature).toFixed(0);
     return temp;
 }
 

@@ -36,11 +36,8 @@ function Hourly() {
                         slidesPerView: 4,
                     },
                 }}
-                style={{
-                    "--swiper-navigation-size": "30px",
-                }}
             >
-                {hourly.map((hWeather, index: number) => {
+                {hourly.map((hWeather: any, index: number) => {
                     const date = new Date(hWeather.dt * 1000);
                     const formatter = Intl.DateTimeFormat([], {
                         hour12: false,

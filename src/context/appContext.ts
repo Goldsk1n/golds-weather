@@ -1,4 +1,19 @@
-import { createContext } from "react";
+import { Context, createContext } from "react";
+
+interface appState {
+    app: {
+        weather: any;
+        unit: string;
+        city: string;
+        country: string;
+        isDark: boolean;
+        geoCoords: {
+            lon: number;
+            lat: number;
+        };
+    },
+    dispatchApp: any
+}
 
 const initialAppState = {
     weather: null,
@@ -12,7 +27,7 @@ const initialAppState = {
     },
 };
 
-function appReducer(state, action: {type: string, payload: any}) {
+function appReducer(state: any, action: { type: string; payload: any }) {
     const { type, payload } = action;
 
     switch (type) {
@@ -33,7 +48,7 @@ function appReducer(state, action: {type: string, payload: any}) {
     }
 }
 
-const AppContext = createContext();
+const AppContext: Context<appState> = createContext({} as appState);
 
 export { appReducer, initialAppState };
 export default AppContext;
