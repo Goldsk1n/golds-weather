@@ -25,7 +25,7 @@ function Forecast() {
                             {dayFormatter.format(date)}
                         </div>
                         <img
-                            src={`/src/assets/${weather.weather[0].icon}.png`}
+                            src={`/${weather.weather[0].icon}.png`}
                             alt="icon"
                             width={100}
                         />

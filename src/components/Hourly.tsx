@@ -57,7 +57,7 @@ function Hourly() {
                                     <span>{formatter.format(date)}</span>
                                 </div>
                                 <img
-                                    src={`/src/assets/${hWeather.weather[0].icon}.png`}
+                                    src={`/${hWeather.weather[0].icon}.png`}
                                     alt=""
                                     width={100}
                                 />

@@ -31,7 +31,7 @@ function Weather() {
             <div
                 className="weather-icon"
                 style={{
-                    background: `url(/src/assets/${current.weather[0].icon}.png)`,
+                    background: `url(/${current.weather[0].icon}.png)`,
                 }}
             ></div>
             <h2 className="temp">

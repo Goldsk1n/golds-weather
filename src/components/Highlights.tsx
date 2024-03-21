@@ -23,7 +23,7 @@ function Highlights() {
             <div className="highlight-container">
                 <Card className="h-card">
                     <div className="h-title">Humidity</div>
-                    <img src="/src/assets/humidity.png" width={100} alt="" />
+                    <img src="/humidity.png" width={100} alt="" />
                     <div className="hl-value">
                         <h1>{current.humidity}</h1>
                         <span>%</span>
@@ -32,9 +32,7 @@ function Highlights() {
                 <Card className="h-card">
                     <div className="h-title">Wind Speed</div>
                     <img
-                        src={`/src/assets/wind-${
-                            isDark ? "night" : "day"
-                        }.png`}
+                        src={`/wind.png`}
                         width={100}
                         alt="wind icon"
                     />
@@ -46,7 +44,7 @@ function Highlights() {
                 <Card className="h-card sun">
                     <div className="sun-info">
                         <img
-                            src="/src/assets/sunrise.png"
+                            src="/sunrise.png"
                             width={50}
                             alt=""
                         />
@@ -57,7 +55,7 @@ function Highlights() {
                     </div>
                     <div className="sun-info">
                         <img
-                            src="/src/assets/sunset.png"
+                            src="/sunset.png"
                             width={50}
                             alt=""
                         />
@@ -69,7 +67,7 @@ function Highlights() {
                 </Card>
                 <Card className="h-card">
                     <div className="h-title">Clouds</div>
-                    <img src="/src/assets/clouds.png" width={100} alt="" />
+                    <img src="/clouds.png" width={100} alt="" />
 
                     <div className="hl-value">
                         <h1> {current.clouds}</h1>
@@ -78,12 +76,12 @@ function Highlights() {
                 </Card>
                 <Card className="h-card">
                     <div className="h-title">UV Index</div>
-                    <img src="/src/assets/uv.png" width={100} alt="" />
+                    <img src="/uv.png" width={100} alt="" />
                     <h1>{current.uvi}</h1>
                 </Card>
                 <Card className="h-card">
                     <div className="h-title">Pressure</div>
-                    <img src="/src/assets/pressure.png" width={100} alt="" />
+                    <img src="/pressure.png" width={100} alt="" />
 
                     <div className="hl-value">
                         <h1>
